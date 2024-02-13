@@ -1,2 +1,1 @@
-# ClassWorkCPP
-###Работы в классе по c++
+# ClassWorkCPP##Работы в классе по c++
