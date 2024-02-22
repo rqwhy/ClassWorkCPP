@@ -1,0 +1,94 @@
+﻿using namespace std;
+#include <iostream>
+
+int main()
+{
+	/*int c;
+	int count=0;
+	cin >> c;
+	while (count <= c) {
+		cout << count++ << " ";
+	}*/
+
+	/*int a, b, n;
+	cout << "print max min n: ";
+	cin >> a >> b >> n;
+	if (a > b) {
+		swap(a, b);
+	}
+	while (a <= b) {
+		if (a % n == 0)cout << a << " ";
+		a++;
+	}*/
+
+	/*int a, b, summa=0;
+	cout << "print max min: ";
+	cin >> a >> b;
+	if (a > b) swap(a, b);
+	if (a % 2 == 1) a++;
+	while (a <= b) {
+		summa += a;
+		a+=2;
+	}
+	cout << summa;*/
+
+	/*int summa = 0, n=1;
+	cout << "print num,stop=0: ";
+	cin >> n;
+	while (n != 0) {
+		cin >> n;
+		summa += n;
+	}
+	cout << summa;*/
+
+	/*int a, b;
+	cin >> a >> b;
+
+	if (a > b) swap(a, b);
+	do {
+		cout << a << " ";
+		a++;
+	} while (a < b);*/
+
+	/*int min,max,n;
+	cout << "Print max min n";
+	cin >> max >> min >> n;
+	if (max < min)swap(min, max);
+	while (n >= min || n <= max) {
+		cout << "number in diapazon: ";
+		cin >> n;
+	}*/
+	while (true) {
+		int action, product, cash = 0, sale;
+		cout << "Print category:\n 1.Milk\n 2.Bread\n 3.Banan\n 4.Pet food\n 5.Candy\n 6.Sale\n 7.check";
+		cin >> action;
+		switch (action) {
+
+		case 1:
+			cash += 30;
+			break;
+		case 2:
+			cash += 20;
+			break;
+		case 3:
+			cash += 100000000;
+			break;
+		case 4:
+			cash += 100;
+			break;
+		case 5:
+			cash += 52;
+			break;
+		default:
+			false;
+			break;
+
+		}
+		cout << " Input sale in $";
+		cin >> sale;
+		sale -= cash;
+		if (sale >= cash)cout << " sale is not real";
+		cout << "your check is " << cash << "$";
+	}
+}
+
