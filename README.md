@@ -5,3 +5,4 @@
 - [15.02.24](https://github.com/rqwhy/ClassWorkCPP/blob/main/15.02.24.cpp)-арифметические действия и логические операции.
 - [20.02.24](https://github.com/rqwhy/ClassWorkCPP/blob/main/20.02)
 - [22.02.24](https://github.com/rqwhy/ClassWorkCPP/blob/main/22.02)
+- [27.02.24](https://github.com/rqwhy/ClassWorkCPP/blob/main/27.02)-циклы For
