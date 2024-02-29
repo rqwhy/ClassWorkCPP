@@ -1,0 +1,130 @@
+﻿using namespace std;
+#include <iostream>
+
+int main()
+{
+    /*int num1, num2, num3, num4;
+    cout << "Print 4 numbers: ";
+    cin >> num1 >> num2 >> num3 >> num4;
+    if (num1 > num2 && num1 > num3 && num1 > num4) cout << "numb 1 most big";
+    if (num2 > num1 && num2 > num3 && num2 > num4) cout << "numb 2 most big";
+    if (num3 > num1 && num3 > num2 && num3 > num4) cout << "numb 3 most big";
+    if (num4 > num1 && num4 > num3 && num4 > num2) cout << "numb 4 most big";
+    else cout << "numbers =";*/
+
+    /*int min, max, n;
+    cout << "Input min and max: ";
+    cin >> min >> max;
+    cout << "Input n: ";
+    cin >> n;
+    if (min > max) swap(min, max);
+    for (int i = 0, count = n; i < max; i++) {
+        if (count > max) count = max;
+    }
+    cout << max;*/
+
+    /*int min=0, max, n;
+    cout << "Input n max: ";
+    cin >> n >> max;
+    if (max < 0) max * (- 1);
+    for (float(i) = 0; max >= i; i+=0.25) {
+        cout << i << endl;
+    }*/
+
+
+    /*int n;
+    cin >> n;
+    while (n != 0) {
+        n++;
+    }*/
+
+
+    /*setlocale(LC_ALL, " ");
+    char symbol;
+    cin >> symbol;
+    switch (symbol){
+    case 97:
+    case 98:
+    case 99:
+    case 100:
+    case 101:
+    case 102:
+    case 103:
+    case 104:
+    case 105:
+    case 106:
+    case 107:
+    case 108:
+    case 109:
+    case 110:
+    case 111:
+    case 112:
+    case 113:
+    case 114:
+    case 115:
+    case 116:
+    case 117:
+    case 118:
+    case 119:
+    case 120:
+    case 121:
+    case 122:
+    case 123:
+    case 124:
+    case 125:
+    case 126:
+    case 127:
+        cout << "English symbol: ";
+        break;
+    case 33:
+    case 40:
+    case 41:
+    case 44:
+    case 45:
+    case 46:
+    case 58:
+    case 59:
+    case 63:
+        cout << "pynctuation mark";
+        break;
+    default:
+        cout << "Russian symbol";
+        break;
+    }*/
+
+    /*int min, max, min2, max2;
+    cout << "Input min and max: ";
+    cin >> min >> max;
+    if (min > max) swap(min, max);
+    cout << "Input min2 and max2: ";
+    cin >> min2 >> max2;
+    if (min2 > max2) swap(min2, max2);
+    if (min > min2) swap(min, min2);
+    if (max > max2) swap(max, max2);
+    for (int i = min; i < min2 && i<=max; i++)cout << i << " ";
+    for (int i = max; i <= max2; i++) {
+        (i > max);
+        cout << i << " ";
+    }*/
+    /*int n;
+    cin >> n;
+    for (int i = 0; n > i; i++) {
+        for (int i1 = 0; n > i1; i1++) {
+            if (i == i1 || i==n-1-i1)cout << "* ";
+            else cout << " ";
+        }
+        cout << endl;
+    }*/
+
+    int n;
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (n % 2 == 0 && j % 2 ==0) {
+                cout << '*' << " ";
+            }
+            else cout << '-' << " ";
+        }
+        cout << endl;
+    }
+}
