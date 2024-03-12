@@ -9,3 +9,4 @@
 - [29.03.24](https://github.com/rqwhy/ClassWorkCPP/blob/main/29.02)-повторение
 - [05.03.24](https://github.com/rqwhy/ClassWorkCPP/blob/main/05.03.cpp)-массивы
 - [07.03.24](https://github.com/rqwhy/ClassWorkCPP/blob/main/07.03.24.cpp)-массивы
+- [12.03.24](https://github.com/rqwhy/ClassWorkCPP/blob/main/12.03.24.cpp)-двоичные массивы
