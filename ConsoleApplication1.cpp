@@ -1,0 +1,99 @@
+﻿#include <iostream>
+using namespace std;
+
+int main()
+{
+	srand(time(NULL));
+	//int a = 4;
+	//cout << a;//4
+	//cout << &a; //F0
+	//int& la = a;// к ячейке ф0 мы можем обратиться используя ла или а
+	//la += 2; //a=b la=b
+	//int* pa = &la;
+	//cout << pa; //f0
+	//cout << *pa;//4
+	//cout << &pa;//c0 - адресс указателя
+
+	//int* arr = new int[4] {1, 2, 3, 4};
+
+	//cout << endl << sizeof(arr); //8-размер памяти занимаемый указактелем
+	//cout << _msize(arr); //16-общий размер памяти занимаемый массивом
+	//cout << sizeof(arr[0]);//4-размер занимающий одним значение массива
+	//int size = _msize(arr) / sizeof(arr[0]);//кол-во эл-ов в массивa
+
+	//int* buf = new int[size - 1];
+	//for (int i = 0; i < size-1; i++) {
+	//	buf[i] = arr[i];
+	//}
+	//delete[]arr;
+	//arr = buf;
+
+	/*int* arr = new int[10];
+	int ind = 3;
+	int count = 4;
+	int size = _msize(arr) / sizeof(arr[0]);
+	for (int i = 0; i < size; i++) {
+		arr[i] = 1 + rand() % 10;
+		cout << arr[i] << " ";
+
+	}
+	cout << endl;
+	int* buf = new int[size - count];
+	for (int i = 0; i < ind; i++) {
+		buf[i] = arr[i];
+	}
+	for (int i = ind + count; i < size; i++) {
+		buf[i - count] = arr[i];
+	}
+	delete[]arr;
+	arr = buf;
+	for (int i = 0; i < size-count; i++) {
+		cout << arr[i] << " ";
+	}*/
+
+	int** arr = new int* [3];/*
+	for (int i = 0; i < 3; i++) {
+		arr[i] = new int[2];
+		for (int j = 0; j < 2; j++) {
+			arr[i][j] = 1 + rand() % 10;
+		}
+	}
+	for (int i = 0; i < 3; i++) {
+		cout << arr[i] << " ";
+	}
+	cout << endl;
+	int** buf = new int* [3];
+	for (int i = 0; i < 3; i++) {
+		buf[i] = new int[3];
+		for (int j = 0; j < 2; j++) {
+			buf[i][j] = arr[i][j];
+		}
+	}
+	for (int i = 0; i < 3; i++) {
+		buf[i][2] = 1 + rand() % 10;
+	}
+	for (int i = 0; i < 3; i++){
+		for (int j  = 0; j < 2; j++){
+			cout << arr[i][j] << " ";
+		}
+		cout << endl;
+	}*/
+	int** buf2 = new int* [3];
+	int** buf = new int* [3];
+	for (int i = 0; i < 3; i++) {
+		buf[i] = new int[3];
+		for (int j = 0; j < 2; j++) {
+			buf[i][j] = arr[i][j];
+		}
+		buf[i][2] = buf2[i][3];
+	}
+	for (int i = 0; i < 3; i++) {
+		arr[i] = buf[i];
+	}
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 2; j++) {
+			cout << arr[i][j] << " ";
+		}
+		cout << endl;
+	}
+}
