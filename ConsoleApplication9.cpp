@@ -1,0 +1,97 @@
+﻿#include <iostream>
+using namespace std;
+#define random(a,b) 1 + rand() % (a + 1 - b)
+
+//7
+//void numSeven(int arr1,int arr2) {
+//	
+//}
+
+int main()
+{
+	//1
+	/*int n1, n2, n3, n4;
+	cout << "print numb(4): ";
+	cin >> n1 >> n2 >> n3 >> n4;
+	if (n1 < n2) n1 = n2;
+	if (n2 < n3) n2 = n3;
+	if (n3 < n4) n3 = n4;
+	cout << n4;*/
+
+	//2
+	/*for (int i = -3; i >= -25; i += 3) {
+		cout << i << " ";
+	}*/
+
+	//3
+	/*int a;
+	cout << "input a: ";
+	cin >> a;
+	for (int i = 0; i < a; i++) {
+		for (int j = 0; j < a; j++) {
+			cout << " ";
+		}
+		for (int j = a-i; j > a; j--) {
+			cout << "*";
+		}
+		cout << endl;
+	}*/
+
+	//4
+	/*int n;
+	int sum = 0;
+	int count = -1;
+	do {
+		cout << "input n: ";
+		cin >> n;
+		count++;
+	}
+	while (n!=0);
+		n += sum;
+	cout << float(sum);*/
+
+	//5
+	/*const int SIZE1 = 3;
+	int arr[SIZE1];
+	int min, max;
+	cout << "input min and max: ";
+	cin >> min >> max;
+	if (min < max) swap(min, max);
+	for (int i = 0; i < SIZE1; i++) {
+		arr[i] = 1 + rand() % (max + 1 - min);
+		cout << arr[i] << " ";
+	}*/
+
+	//6
+	/*int size1 = 3;
+	int size2 = 4;
+	int min, max;
+	cout << "input min and max: ";
+	cin >> min >> max;
+
+	int** arr = new int* [size1];
+	int num = 0;
+	int sum = 0;
+	for (int i = 0; i < size1; i++) {
+		arr[i] = new int[size2];
+		for (int j = 0; j < size2; j++) {
+			arr[i][j] = random(min, max);
+			cout << arr[i][j] << " ";
+		}
+		cout << endl;
+	}
+	for (int i = 0; i < size1; i++) {
+		for (int j = 0; j < size2; j++) {
+			sum += arr[i][j];
+		}
+	}
+	cout << "summa = " << sum << "number = " << num;*/
+
+	//7
+	int arr1[1];
+	int arr2[1];
+	for (int i = 0; i < 0; i++) {
+		arr1[i] = random(10, 20);
+		cout << arr1[i] << " ";
+	}
+}	
